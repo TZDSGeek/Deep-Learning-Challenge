@@ -1,15 +1,16 @@
-## Neural Network Model Report
+# Neural Network Model Report
 
 ## Overview
 The purpose of this analysis was to create a machine learning model that can accurately predict if applicants will be successful if funded by the company Alphabet Soup.
 
 ## Results
 
-# Data Preprocessing 
+### Data Preprocessing 
 •	The target or dependent variable for my model was the Is_Successful column.
 •	The features for my model were a combination of the rest of the columns (excluding the target variable) and the columns with string data types converted to binary values by applying the Pandas get dummies function. I established cut off points for several columns to either bin or remove data with low value counts.
 •	I removed the EIN and name columns from the input data, because they were specific to each company and had no correlation with applicant success.
-# Compiling Training, and Evaluating the Model
+
+### Compiling Training, and Evaluating the Model
 •	Before my initial testing, I used a Keras tuner to determine the best hyperparameter configuration. Here were the optimum parameters per the Keras tuner, I used these in my first round of testing and achieved a model accuracy of 72%.
 ![image](https://github.com/TZDSGeek/Deep-Learning-Challenge/assets/137857956/781c5e48-a163-4787-a415-516797377d87)
 After several hours of testing and hyper parameter tuning, I decided to use 3 hidden layers with a relu activation function for each layer, the first hidden layer contained 9 neurons, the second hidden layer contained 7 neurons, the third hidden layer contained 8 neurons. I selected these hyper parameters because the model achieved the highest accuracy and optimal convergence when they were applied. 
