@@ -26,5 +26,5 @@ After several hours of testing and hyper parameter tuning, I decided to use 3 hi
 
 ![image](https://github.com/TZDSGeek/Deep-Learning-Challenge/assets/137857956/1051a0e5-8e70-4c5e-832d-2b4cc908c75d)
 
-# Summary
+## Summary
 Although this model’s accuracy has been improved, I would not recommend it for production. The model converges around 15 to 20 epochs, indicating that it is learning efficiently from the training data. The number of epochs used to train the model was adjusted to 100 to prevent overfitting. With more dedicated time and resources, the model has potential to meet and even exceed its targeted accuracy. Another model that could be recommended would be random forest algorithm, it would create multiple simple trees assigned to smaller portions of the data and when combined would create a strong classifier with a minimal risk of overfitting the model.
